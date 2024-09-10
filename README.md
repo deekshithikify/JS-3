@@ -1,1 +1,2 @@
-# JS-3
+# JS,
+If else, swith, forloop, while loop, iterables
