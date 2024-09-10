@@ -1,0 +1,74 @@
+<head>
+    <title> hello page</title>
+</head>
+<body>
+    <h3> welcome to java script tutorials</h3>
+    <p id="p1"> paragraph</p>
+
+    <script>
+
+        //if else
+
+        var salary=600;
+
+        if (salary > 1000) {
+            document.getElementById("p1").innerHTML="good salary";
+        }
+        else if (salary > 700) {
+            document.getElementById("p1").innerHTML="average salary";
+        }
+        else {
+            document.getElementById("p1").innerHTML="low salary";
+        }
+
+
+        //switch
+        var sexType="M";
+        switch(sexType) {
+          case "F" :
+            document.getElementById("p1").innerHTML="Femele";
+            break;
+          case "M" :
+            document.getElementById("p1").innerHTML="Male";
+            break;
+          default :
+          document.getElementById("p1").innerHTML="Not Specified";
+        }
+
+
+        const fruits=["apple","orange","guava,","rasbreey","strawberry"];
+
+        //for loop
+
+        for (let i=0; i<fruits.length; ++i)
+        {
+          console.log("element#"+i+"="+fruits[i]);
+        }        
+
+
+        //while loop
+        
+        var ele=0;
+        while(ele<fruits.length)
+        {
+          console.log("elements#"+ele+"="+fruits[ele]);
+          ++ele;
+        }
+
+        var ind=0;
+        do{
+          console.log("element#"+ind+"="+fruits[ind]);
+          ind++;
+        } 
+        while (ind<=fruits.length)
+
+
+        //iterables
+
+        for(ele of fruits)
+        {
+          console.log(ele);
+        }
+   
+    </script>
+</body>
